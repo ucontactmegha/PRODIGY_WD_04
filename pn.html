@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anjali Kumari - Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f0f0f0;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      
+    }
+    
+    header {
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-align: center;
+      padding: 100px 0;
+      background-color: #333;
+    }
+    
+    header img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+      object-fit: cover;
+    }
+    
+    header img:hover {
+      transform: scale(1.1);
+    }
+    
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    
+    header p {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+    
+    .btn {
+      display: inline-block;
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .btn:hover {
+      background-color: #45a049;
+    }
+    
+    .social-links {
+      margin-top: 20px;
+    }
+    
+    .social-links a {
+      margin: 0 10px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.5rem;
+      transition: color 0.3s ease;
+    }
+    
+    .social-links a:hover {
+      color: #4CAF50;
+    }
+    
+    section {
+      padding: 50px 0;
+      background-color: #fff;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    section:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      color: #333;
+    }
+    
+    section p {
+      font-size: 1.2rem;
+      color: #666;
+    }
+    
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    ul li {
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #e7e5e5;
+      border-radius: 5px;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    
+    ul li:hover {
+      transform: translateX(10px);
+      background-color: #d3d3d3;
+    }
+    
+    .project {
+      margin-bottom: 30px;
+      background-color: #e7e5e5;
+      padding: 20px;
+      color: #000;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .project p {
+      color: #020202;
+    }
+    
+    .project:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    form label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: border-color 0.3s ease;
+    }
+    
+    form input[type="text"]:focus,
+    form input[type="email"]:focus,
+    form textarea:focus {
+      border-color: #4CAF50;
+    }
+    
+    form textarea {
+      resize: vertical;
+    }
+    
+    form button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    form button:hover {
+      background-color: #45a049;
+    }
+    
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+    
+    #contact {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header id="home">
+    <div class="container">
+      <img src="img.png" alt="Anjali Kumari">
+      <h1>Anjali Kumari</h1>
+      <p>Frontend Developer</p>
+      <a href="#about" class="btn">About Me</a>
+      <a href="MyCV.pdf" class="btn" download>Download CV</a>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/muhammad-tayyab-832195229" target="_blank">LinkedIn</a>
+        <a href="https://github.com/muammadtayyab648" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Enthusiastic and detail-oriented Frontend Developer with 6+ months of hands-on experience in building responsive and user-friendly web applications using HTML, CSS, and JavaScript. Eager to bring my strong technical skills and passion for web development to create seamless and engaging user experiences.</p><br><br>
+      <h3>Education</h3>
+      <p>Bachelor's Of Computer Application(2023 Graduated)</p><br><br>
+      <h3>Professional Experience</h3>
+      <p><strong>Frontend Web Developer at Inlights Company (Feb 2024 - May 2024)</strong><br>
+      Responsible for developing and maintaining web applications using HTML, CSS, and JavaScript.</p>
+      <p><strong>Intern at Bihar National College (Nov 2023 - Aug 2024)</strong><br>
+      Worked on educational technology projects, developing interactive learning tools for students.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React.js</li>
+        <li>Bootstrap</li>
+        <li>Python</li>
+        <li>C/C++</li>
+        <li>Responsive Web Design</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio website showcasing skills, projects, and accomplishments.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+      <div class="project">
+        <h3>Tic Tac Toe Game</h3>
+        <p>Build a Tic Tac Toe game. By implementing functions to handle user clicks, track game state, and check for winning conditions, you can create an interactive and engaging tic-tac-toe game. With these technologies and functionalities, users can play against each other or against an AI opponent, aiming to get three markers in a row to win the game.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+      <div class="project">
+        <h3>Weather App</h3>
+        <p>A weather application built using HTML, CSS, and JavaScript that fetches data from a weather API and displays current weather conditions.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+      <div class="project">
+        <h3>Calculator App</h3>
+        <p>A simple calculator application built using HTML, CSS, and JavaScript, featuring basic arithmetic operations.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+      <div class="project">
+        <h3>Quiz App</h3>
+        <p>An interactive quiz application built using HTML, CSS, and JavaScript, allowing users to answer multiple-choice questions and receive immediate feedback.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>2024 Anjali Kumari. Frontend Web Developer.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      alert('Message sent!');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
